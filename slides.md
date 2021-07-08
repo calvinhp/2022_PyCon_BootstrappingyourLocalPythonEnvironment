@@ -96,7 +96,7 @@ Simple is better than complex.
 # 🚯 No `sudo` {.r-fit-text}
 ## I don't care, no whining {.fragment}
 
-# 📵 Do not use the sytem Python {.r-fit-text}
+# 📵 Do not use the system Python {.r-fit-text}
 
 ## For Anything {.fragment}
 
@@ -104,7 +104,62 @@ Simple is better than complex.
 
 # pyenv
 
+* Change the global Python version on a per-user basis
+* Per-project Python versions
+* Override the Python version with an environment variable
+* Search commands from multiple versions of Python at a time
+  
+<https://github.com/pyenv/pyenv#installation>  
+
+<https://pyenv-win.github.io/pyenv-win/>
+
+:::notes
+This may be helpful to test across Python versions with tox.
+
+Pyenv does not work in Windows outside the Windows Subsystem for Linux.
+:::
+
+# Let's see `pyenv` in action 🚀
+
+> Explicit is better than implicit.
+
+:::notes
+Show global and local
+Install a python version
+View installed versions
+:::
+
+# `pyenv` Plugins
+
+* virtualenv
+* virtualenvwrapper
+
+~~~{.shell}
+$ brew search pyenv
+~~~
+
+# `virtualenv` & `virtualenvwrapper`
+
+:::notes
+pyenv virtualenvs
+
+show global freeze, make a virtualenv, show freeze, install  requests
+
+quick demo of virtualenvwrapper
+:::
+
 # Virtual Environments are Included 🔋 {.r-fit-text}
+
+## If you have simple needs, this is for you!
+
+~~~{.shell}
+$ python -m venv venv
+~~~
+
+:::notes
+make sure to show that you can explicitly control which python version via the path to python
+show interacting with pyenv to set a specific python for the project and creating an env
+:::
 
 # pipx
 
@@ -129,10 +184,20 @@ $ pipx install httpie
 done! ✨ 🌟 ✨
 ~~~
 
+:::notes
+show installing bpytop
+show installing markdown and injecting pygments
+:::
+
 
 # What about the "user scheme"?
 
     $ python -m pip install --user SomePackage
+
+:::notes
+runs into the same problems as using the global python
+also, the uninstall does not support --user
+::: 
 
 # But what about ...
 
@@ -143,10 +208,37 @@ done! ✨ 🌟 ✨
 * [PDM](https://pypi.org/project/pdm/)
 * [pyproject.toml](https://www.python.org/dev/peps/pep-0621/)
 
-# But I want repeatability...
+:::notes
+show poetry demo if time
+:::
+
+# But I want repeatability and simplicity...
+
+> Simple is better than complex.
 
 * [piptools](https://github.com/jazzband/pip-tools/#readme)
+
+:::notes
+demo
+
+Create demo foler and venv
+
+Install requests
+
+Freeze to reqs.txt
+
+Add reqs.in
+
+python -m piptools compile --upgrade --no-annotate --no-header --allow-unsafe --generate-hashes --output-file /local/requirements1.txt /local/requirements1.in
+:::
 
 # I mean really repeatable...
 
 ## Enter Docker + `pip-tools`
+
+
+# Questions?
+
+#### <calvin@sixfeetup.com>
+
+[`@calvinhp`](https://twitter.com/calvinhp)
