@@ -4,7 +4,7 @@ pagetitle: Bootstrapping your Local Python Environment
 author: Calvin Hendryx-Parker, CTO, Six Feet Up
 author-meta:
     - Calvin Hendryx-Parker
-date: IndyPy ChiPy 2021
+date: DjangoCon 2021
 date-meta: 2021
 keywords:
     - Python
@@ -15,6 +15,7 @@ keywords:
 # Bootstrapping your Local Python Environment {data-background-image="images/david-clode-d0CasEMHDQs-unsplash.jpg"}
 #### Calvin Hendryx-Parker, CTO
 #### Six Feet Up
+#### DjangoCon 2021
 
 :::{.credits}
 Photo by <a href="https://unsplash.com/@davidclode?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">David Clode</a> on <a href="https://unsplash.com/s/photos/python?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
