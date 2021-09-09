@@ -15,14 +15,15 @@ keywords:
 # Bootstrapping your Local Python Environment {data-background-image="images/david-clode-d0CasEMHDQs-unsplash.jpg"}
 #### Calvin Hendryx-Parker, CTO
 #### Six Feet Up
-#### DjangoCon 2021
+##### DjangoCon 2021
 
 :::{.credits}
 Photo by <a href="https://unsplash.com/@davidclode?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">David Clode</a> on <a href="https://unsplash.com/s/photos/python?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
 :::
 
 # Let's set our intention {data-background-image="images/sean-stratton-ObpCE_X3j6U-unsplash.jpg"}
-~~~ {.stretch .shell}
+
+~~~
 $ python -m this
 
 The Zen of Python, by Tim Peters
@@ -135,7 +136,7 @@ View installed versions
 * virtualenv
 * virtualenvwrapper
 
-~~~{.shell}
+~~~{.bash}
 $ brew search pyenv
 ~~~
 
@@ -153,7 +154,7 @@ quick demo of virtualenvwrapper
 
 ## If you have simple needs, this is for you!
 
-~~~{.shell}
+~~~{.bash}
 $ python -m venv venv
 ~~~
 
@@ -166,17 +167,17 @@ show interacting with pyenv to set a specific python for the project and creatin
 
 <https://pypa.github.io/pipx/>
 
-~~~{.shell}
+~~~{.bash}
 $ brew install pipx
 $ pipx ensurepath
-~~~
 
 pipx is ready to go! ✨ 🌟 ✨
+~~~
 
 
 ## Let's do some damage {.fragment}
 
-~~~{.shell .fragment}
+~~~{.bash .fragment}
 $ pipx install httpie
   installed package httpie 2.4.0, Python 3.9.6
   These apps are now globally available
@@ -205,12 +206,16 @@ also, the uninstall does not support --user
 * [Anaconda Python and Conda](https://www.anaconda.com/products/individual)
 * [ActiveState Python](https://www.activestate.com/products/python/)
 * [pipenv](https://pipenv.pypa.io/en/latest/)
+* [asdf](https://github.com/danhper/asdf-python)
 * [poetry](https://python-poetry.org/)
 * [PDM](https://pypi.org/project/pdm/)
 * [pyproject.toml](https://www.python.org/dev/peps/pep-0621/)
 
 :::notes
-show poetry demo if time
+`pipenv` seemed promising in the beginning...
+`asdf` if closest to pyenv, but lacks nice plugins like virtualenv
+
+show `poetry` demo if time
 :::
 
 # But I want repeatability and simplicity...
