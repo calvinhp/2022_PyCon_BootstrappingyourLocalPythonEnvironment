@@ -2,14 +2,12 @@ slide-theme := minions_white
 
 index.html: slides.md js/reveal.js dist/theme/$(slide-theme).css ## build presentation and theme
 	pandoc -t revealjs -s -V revealjs-url=. \
-        -L revealjs-codeblock.lua \
 		-V theme=$(slide-theme) \
 		-V width=1200 \
 		-V center=false \
 		-V autoPlayMedia=false \
 		-V highlightjs \
 		-V highlightjs-theme:github \
-		--template template.html \
 		-o "$@" "$<"
 
 js/reveal.js:
