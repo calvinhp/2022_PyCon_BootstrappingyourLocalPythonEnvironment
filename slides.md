@@ -159,6 +159,8 @@ $ python -m venv venv
 ~~~
 
 :::notes
+New in version 3.3.
+
 make sure to show that you can explicitly control which python version via the path to python
 show interacting with pyenv to set a specific python for the project and creating an env
 :::
@@ -241,6 +243,12 @@ python -m piptools compile --upgrade --no-annotate --no-header --allow-unsafe --
 # I mean really repeatable...
 
 ## Enter Docker + `pip-tools`
+
+
+:::notes
+
+See Moshe's talk earlier today about getting this right and the complexity involved
+:::
 
 
 # Questions?

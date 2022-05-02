@@ -1,4 +1,4 @@
-FROM python:3.9-slim-bullseye AS build
+FROM python:3.10-slim-bullseye AS build
 
 ARG DEVEL="no"
 
@@ -18,7 +18,7 @@ RUN set -x \
     && pip --no-cache-dir --disable-pip-version-check install --no-deps \
         -r /tmp/requirements/base.txt
 
-FROM python:3.9-slim-bullseye
+FROM python:3.10-slim-bullseye
 
 ENV PATH="/app/bin:${PATH}"
 

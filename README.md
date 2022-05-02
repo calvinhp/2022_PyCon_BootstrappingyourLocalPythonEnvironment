@@ -12,6 +12,7 @@ Attribution-ShareAlike 4.0 International License</a>.
 
 ### Build dependencies
 
+- git-lfs -- great for large images in the slideshows
 - nvm
 - pandoc
 - bsdtar (part of the `libarchive-tools` package on Ubuntu)

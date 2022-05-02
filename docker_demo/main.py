@@ -15,5 +15,5 @@ if __name__ == '__main__':
     print_hi('PyCharm')
 
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/
-
-requests.get("https://sixfeetup.com")
+r = requests.get("https://sixfeetup.com")
+print(r.status_code)    
